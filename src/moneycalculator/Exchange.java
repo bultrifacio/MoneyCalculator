@@ -3,6 +3,7 @@ package moneycalculator;
 import java.util.Date;
 
 public class Exchange {
+
     private final Date date;
     private final float money;
     private final Currency currency;
@@ -24,5 +25,5 @@ public class Exchange {
     public Currency getCurrency() {
         return currency;
     }
-    
+
 }

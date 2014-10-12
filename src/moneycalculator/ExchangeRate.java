@@ -7,11 +7,12 @@ import java.util.Date;
  * @author juancarlos
  */
 public class ExchangeRate {
+
     private final Currency fromCurrency;
     private final Currency toCurrency;
     private final Date date;
     private final float rate;
-    
+
     public ExchangeRate(Currency fromCurrency, Currency toCurrency, Date date, float rate) {
         this.fromCurrency = fromCurrency;
         this.toCurrency = toCurrency;
