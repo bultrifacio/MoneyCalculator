@@ -2,10 +2,6 @@ package model;
 
 import java.util.Date;
 
-/**
- *
- * @author juancarlos
- */
 public class ExchangeRate {
 
     private final Currency fromCurrency;
