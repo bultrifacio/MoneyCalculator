@@ -2,14 +2,18 @@ package model;
 
 public class Currency {
 
+    private final String name;
     private final String code;
     private final String symbol;
-    private final String name;
 
-    public Currency(String code, String symbol, String name) {
-        this.code = code;
+    public Currency(String name, String code, String symbol) {
         this.name = name;
+        this.code = code;
         this.symbol = symbol;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public String getCode() {
@@ -20,8 +24,8 @@ public class Currency {
         return symbol;
     }
 
-    public String getName() {
-        return name;
+    @Override
+    public String toString() {
+        return name + "";
     }
-
 }

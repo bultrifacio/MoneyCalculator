@@ -1,14 +1,21 @@
 package model;
-import java.util.HashMap;
-import java.util.Map;
 
-public class CurrencySet{
-    private Map<String, Currency> currencySet= new HashMap<>();
+import java.util.ArrayList;
+import java.util.List;
 
-    public Map<String, Currency> getCurrencySet() {
-        return currencySet;
+public class CurrencySet {
+
+    private final List<Currency> list = new ArrayList<Currency>();
+
+    public boolean add(Currency currency) {
+        return list.add(currency);
     }
-    public void add(Currency currency){
-        currencySet.put(currency.getCode(),currency);
+
+    public Currency get(int index) {
+        return list.get(index);
+    }
+
+    public Currency[] toArray() {
+        return list.toArray(new Currency[list.size()]);
     }
 }
