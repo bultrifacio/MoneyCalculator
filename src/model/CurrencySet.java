@@ -5,7 +5,7 @@ import java.util.List;
 
 public class CurrencySet {
 
-    private final List<Currency> list = new ArrayList<Currency>();
+    private final List<Currency> list = new ArrayList<>();
 
     public boolean add(Currency currency) {
         return list.add(currency);

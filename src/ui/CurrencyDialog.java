@@ -1,7 +1,6 @@
 package ui;
 
 import model.Currency;
-import model.CurrencySet;
 
 public interface CurrencyDialog {
 

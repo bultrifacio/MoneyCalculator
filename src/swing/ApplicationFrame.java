@@ -16,7 +16,7 @@ public class ApplicationFrame extends JFrame {
     public ApplicationFrame(Currency[] currencies) throws HeadlessException {
         this.currencies = currencies;
         this.setTitle("Money calculator");
-        this.setSize(500,500);
+        this.setSize(200,200);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.createWidgets();
         this.setVisible(true);
